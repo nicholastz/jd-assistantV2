@@ -7,7 +7,7 @@ if __name__ == '__main__':
     asst = Assistant()  # 初始化
     asst.login_by_QRcode()  # 扫码登陆
 print("定时预约抢购...")
-sku_id = '67407486470'
+sku_id = '100012043978'
 asst.print_item_info(sku_id)
 reserve_info = asst.get_reserve_info(sku_id)
 reserve_time = reserve_info.get("yueStime")
